@@ -1,0 +1,1 @@
+web: gunicorn fakedeposit.wsgi --log-file -
