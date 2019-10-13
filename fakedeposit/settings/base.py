@@ -25,7 +25,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 # AWS bucket
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', None)
-AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME'. None)
+AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', None)
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', None)
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', None)
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
