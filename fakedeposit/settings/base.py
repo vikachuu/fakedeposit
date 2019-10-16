@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'deposit_guarantee',
     'deposit_tax',
     'deposit_bank_rates',
+    'application_to_fund',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
