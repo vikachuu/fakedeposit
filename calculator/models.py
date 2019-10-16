@@ -8,14 +8,12 @@ from wagtail.api import APIField
 
 
 class CalculatorPage(Page):
-    intro = RichTextField(blank=True)
-    # intro = models.CharField(max_length=250)
+    text = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
-        FieldPanel('intro', classname="full")
-        # FieldPanel('intro'),
+        FieldPanel('text', classname="full")
     ]
 
     api_fields = [
-        APIField('intro'),
+        APIField('text'),
     ]
