@@ -9,7 +9,7 @@ from wagtail.api import APIField
 
 class DepositBankRatesPage(Page):
     text = RichTextField(blank=True)
-
+    
     content_panels = Page.content_panels + [
         FieldPanel('text', classname="full")
     ]
