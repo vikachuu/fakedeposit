@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'search',
     'calculator',
     'deposit_guarantee',
+    'deposit_tax',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
