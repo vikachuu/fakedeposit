@@ -6,7 +6,7 @@ import os
 env = os.environ.copy()
 SECRET_KEY = env['SECRET_KEY']
 
-DEBUG = False
+DEBUG = True
 
 # AWS
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', None)
