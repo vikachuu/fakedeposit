@@ -14,7 +14,7 @@ class CalculatorPage(Page):
     text_field = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
-        FieldPanel('text', classname="full")
+        FieldPanel('text_field', classname="full")
     ]
 
     def text(self):
