@@ -12,9 +12,11 @@ from wagtail.core.templatetags import wagtailcore_tags
 class FundLawPage(Page):
     
     text_field = RichTextField(blank=True)
+    page_description = models.CharField(max_length=200, default="string")
 
     content_panels = Page.content_panels + [
-        FieldPanel('text_field', classname="full")
+        FieldPanel('text_field', classname="full"),
+        FieldPanel('page_description')
     ]
 
     def text(self):
@@ -22,4 +24,5 @@ class FundLawPage(Page):
 
     api_fields = [
         APIField('text'),
+        APIField('page_description'),
     ]
