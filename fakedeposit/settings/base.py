@@ -30,6 +30,8 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', None)
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', None)
 # AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
+WAGTAILAPI_LIMIT_MAX = None
+
 # Application definition
 
 INSTALLED_APPS = [
