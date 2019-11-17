@@ -42,6 +42,7 @@ class BankPage(Page):
     full_body = RichTextField(blank=True)
     page_description = models.CharField(max_length=200, default="string")
     deposit_path = models.CharField(max_length=100, default="string")
+    external_link = models.CharField(max_length=200, default="link")
 
     search_fields = Page.search_fields + [
         index.SearchField('bank_name'),
@@ -56,6 +57,7 @@ class BankPage(Page):
         index.SearchField('full_body'),
         index.SearchField('page_description'),
         index.SearchField('deposit_path'),
+        index.SearchField('external_link'),
     ]
 
     content_panels = Page.content_panels + [
@@ -71,6 +73,7 @@ class BankPage(Page):
         FieldPanel('full_body', classname="full"),
         FieldPanel('page_description'),
         FieldPanel('deposit_path'),
+        FieldPanel('external_link'),
     ]
 
     api_fields = [
@@ -86,4 +89,5 @@ class BankPage(Page):
         APIField('full_body'),
         APIField('page_description'),
         APIField('deposit_path'),
+        APIField('external_link'),
     ]
